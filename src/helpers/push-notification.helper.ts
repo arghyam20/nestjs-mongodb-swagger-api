@@ -16,7 +16,7 @@ export class PushNotificationHelper {
       );
     }
     webpush.setVapidDetails(
-      'mailto:arghya.mitra@webskitters.com',
+      'mailto:admin@example.com',
       publicKey,
       privateKey,
     );
