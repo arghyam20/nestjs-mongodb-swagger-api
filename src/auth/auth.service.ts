@@ -277,7 +277,7 @@ export class AuthService {
 
     const projectName = process.env.PROJECT_NAME
       ? process.env.PROJECT_NAME
-      : 'MDM';
+      : 'My Project';
 
     const locals = {
       site_logo_url: `${process.env.AWS_File_URL}images/logo.png`,

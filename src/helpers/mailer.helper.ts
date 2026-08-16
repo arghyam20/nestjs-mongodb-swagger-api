@@ -41,7 +41,7 @@ export class MailerService {
 
     const mailOptions = {
       from: {
-        name: 'MDM',
+        name: 'My Project',
         address: process.env.MAIL_USERNAME,
       },
       to,
