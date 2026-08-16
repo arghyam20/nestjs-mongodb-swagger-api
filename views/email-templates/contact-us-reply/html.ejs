@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Reply from our support team</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style type="text/css">
+    body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+    table { border-collapse: collapse !important; }
+    body { margin: 0 !important; padding: 0 !important; width: 100% !important; background-color: #f4f6fb; }
+    img { border: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; }
+    a { text-decoration: none; }
+    @media only screen and (max-width: 640px) {
+      .container { width: 100% !important; }
+      .content-pad { padding: 24px 24px 32px 24px !important; }
+      .header-pad { padding: 24px 24px 20px 24px !important; }
+      .footer-pad { padding: 20px 24px !important; }
+    }
+  </style>
+</head>
+<body style="margin:0; padding:0; background-color:#f4f6fb;">
+  <table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" style="background-color:#f4f6fb;">
+    <tr>
+      <td align="center" style="padding:32px 16px;">
+        <table class="container" role="presentation" width="600" border="0" cellpadding="0" cellspacing="0" style="width:600px; max-width:600px; background-color:#ffffff; border-radius:12px; overflow:hidden;">
+          <!-- Header -->
+          <tr>
+            <td class="header-pad" align="center" style="padding:28px 40px 22px 40px; border-bottom:1px solid #eef1f6;">
+              <img src="<%= site_logo_url %>" style="max-height:64px; display:block;" border="0" alt="<%= typeof project_name !== 'undefined' ? project_name : 'Brand' %>">
+            </td>
+          </tr>
+          <!-- Body -->
+          <tr>
+            <td class="content-pad" style="padding:28px 40px 40px 40px; font-family:'Inter', Arial, Helvetica, sans-serif; color:#334155;">
+              <p style="margin:0 0 18px 0; font-size:15px; line-height:22px;">Hello <%= name %>,</p>
+              <h1 style="margin:0 0 12px 0; font-size:22px; line-height:28px; font-weight:700; color:#0f172a;">Reply from our support team</h1>
+              <p style="margin:0 0 20px 0; font-size:15px; line-height:24px;"><%= message %></p>
+
+              <p style="margin:0 0 8px 0; font-size:13px; font-weight:600; text-transform:uppercase; letter-spacing:0.5px; color:#64748b;">Your original query</p>
+              <table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" style="background-color:#f8fafc; border:1px solid #eef1f6; border-radius:8px;">
+                <tr>
+                  <td style="padding:16px 20px; font-family:'Inter', Arial, sans-serif; font-size:14px; line-height:22px; color:#334155;">
+                    <p style="margin:0 0 8px 0;"><strong style="color:#0f172a;">Subject:</strong> <%= data.subject %></p>
+                    <p style="margin:0;"><strong style="color:#0f172a;">Message:</strong> <%= data.message %></p>
+                  </td>
+                </tr>
+              </table>
+
+              <p style="margin:24px 0 0 0; font-size:14px; line-height:22px; color:#64748b;">
+                If your question isn't fully resolved, feel free to reply to this email.
+              </p>
+            </td>
+          </tr>
+          <!-- Footer -->
+          <tr>
+            <td class="footer-pad" style="padding:18px 40px; background-color:#f8fafc; border-top:1px solid #eef1f6; font-family:'Inter', Arial, sans-serif; font-size:12px; line-height:20px; color:#94a3b8; text-align:center;">
+              <p style="margin:0;">&copy; <%= current_year %> <%= typeof project_name !== 'undefined' ? project_name : 'Brand' %>. All rights reserved.</p>
+              <p style="margin:4px 0 0 0;">You received this email because you contacted our team.</p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
