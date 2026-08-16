@@ -89,6 +89,7 @@ src/
 
 ## 📜 Scripts
 
+- `npm run seed`: Run the database seeder to populate default roles and the initial admin user.
 - `npm run build`: Compile the application to the `dist` directory.
 - `npm run format`: Format source code using Prettier.
 - `npm run lint`: Lint source code using ESLint.
